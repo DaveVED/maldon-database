@@ -26,7 +26,8 @@ for your specific use case.
 
 Before getting started, you'll need to have the following tools installed:
 - MongoDb Atlas Account or a MongoDB Cluster running.
-- Python 3.8 or later (`python3 -m venv .venv && pip3 install -r requirements.txt`)
+- Python 3.8 or later insatlled
+- Requuiremnts installed `python3 -m venv .venv && source .venv/bin/activate && pip3 install -r requirements.txt`
 
 ### Scripts Usage
 
