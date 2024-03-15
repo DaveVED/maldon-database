@@ -1,4 +1,4 @@
-<div align="center">
+div align="center">
 
 # Maldon Database
 
@@ -27,8 +27,7 @@ for your specific use case.
 Before getting started, you'll need to have the following tools installed:
 - MongoDb Atlas Account or a MongoDB Cluster running.
 - Python 3.8 or later insatlled
-- Requuiremnts installed 
-  `python3 -m venv .venv && source .venv/bin/activate && pip3 install -r requirements.txt`
+- Requuiremnts installed _(`pip3 install -r requirements.txt`)_
 
 ### Scripts Usage
 
