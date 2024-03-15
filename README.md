@@ -12,7 +12,7 @@ Welcome, here you will find a collection of scripts and tools to help manage and
 maintain a MongoDB cluster for the Maldon application. It was originally 
 designed to be used with a MongoDB Atlas cluster, but can be used with any
 MongoDB cluster. I try provide a set of generic tools to help _you_ run and mange
-Maldon. It is not meant to be a one-size-fits-all solution, that can
+Maldon. It's suppose to be a one-size-fits-all solution, that can
 run out of the box, but also allows for customization and modification to fit
 for your specific use case.
 
