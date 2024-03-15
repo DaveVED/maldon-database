@@ -6,7 +6,11 @@ import argparse
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-def ping_mongodb(user: str, password: str, cluster: str) -> None:
+def ping_mongodb(user: str, cluster: str) -> None:
+    # user here is the admin user. Will break if not admin user.
+    password = os.getenv("MONOGODB_MALDON_ADMIN_PASSWORD", None)
+    assert password is not None, "The $MONGODB_MALDON_ADMIN_PASSWORD environment variable is not set"
+    
     url: str = f"mongodb+srv://{user}:{password}@{cluster}.waalpww.mongodb.net/?retryWrites=true&w=majority&appName={cluster}"
 
     client = MongoClient(url, server_api=ServerApi("1"))
@@ -25,10 +29,7 @@ def run():
     
     args = parser.parse_args()
     
-    password = os.getenv("MONOGODB_MALDON_ADMIN_PASSWORD", None)
-    assert password is not None, "The $MONGODB_MALDON_ADMIN_PASSWORD environment variable is not set"
-    
-    ping_mongodb(args.user, password, args.cluster)
+    ping_mongodb(args.user, args.cluster)
 
 if __name__ == "__main__":
     run()

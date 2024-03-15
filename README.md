@@ -55,4 +55,14 @@ very conservative on what I take.  I don't want Maldon Database scripts _solving
 issues. I want them to be generic and useful for everyone.  If you have a specific
 use cases you can take a fork and make it your own.
 
+#### Create a MongoDB Cluster Collection
 
+```bash
+# Set your password in the environment variable.
+export MONGOODB_MASLDON_SYS_PASSWORD="<your_password>"
+
+# If you you want to get fancy you can set it in you .venv so you don't have to set it every time..
+# echo "export MONGOODB_MASLDON_SYS_PASSWORD='<your_password>'" >> $VENV/bin/activate
+
+chmod +x scripts/create_mongodb_user_collection.py
+./scripts/create_mongodb_user_collection.py
