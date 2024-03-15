@@ -2,7 +2,8 @@
 
 # Maldon Database
 
-[![GO](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](http://www.go.dev)
+[![MongoDB(https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=whi)[(https://https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](http://www.go.dev)
 
 <img alt="Maldon Service" height="280" src="/assets/temp.png" />
 
