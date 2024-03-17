@@ -7,6 +7,8 @@
 
 <img alt="Maldon Service" height="280" src="/assets/temp.png" />
 
+</div>
+
 ## ⇁ TOC
 * [Getting Started](#-Getting-Started)
 
